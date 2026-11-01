@@ -1,0 +1,307 @@
+/* ======================================================
+   LANDING / ONBOARDING
+   MARIO PLUS COMPANION
+====================================================== */
+
+.onboarding-page {
+  min-height: 100vh;
+
+  background-image:
+    linear-gradient(
+      rgba(20, 20, 20, 0.38),
+      rgba(20, 20, 20, 0.38)
+    ),
+    url('/assets/onboarding-background.jpg');
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+}
+
+
+/* ======================================================
+   CONTENEDOR
+====================================================== */
+
+.onboarding-shell {
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding-top: 28px;
+  padding-bottom: 28px;
+}
+
+
+/* ======================================================
+   TARJETA PRINCIPAL
+====================================================== */
+
+.onboarding-card {
+  width: 100%;
+
+  max-width: 1180px;
+
+  min-height: 690px;
+
+  display: grid;
+
+  grid-template-columns:
+    1.05fr
+    0.95fr;
+
+  overflow: hidden;
+
+  border-radius: 32px;
+
+  background:
+    rgba(255,255,255,.06);
+
+  box-shadow:
+    0 24px 60px
+    rgba(0,0,0,.28);
+
+  backdrop-filter:
+    blur(3px);
+}
+
+
+/* ======================================================
+   PANEL VISUAL
+====================================================== */
+
+.onboarding-visual {
+  position: relative;
+
+  min-height: 690px;
+
+  background-image:
+    linear-gradient(
+      to top,
+      rgba(40, 0, 120, 0.72),
+      rgba(0, 0, 0, 0.10)
+    ),
+    url('/assets/onboarding-bg.jpg');
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+/* ======================================================
+   PANEL DE CONTENIDO
+====================================================== */
+
+.onboarding-content {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  padding:
+    42px
+    32px;
+
+  background:
+    rgba(255,255,255,.98);
+}
+
+
+.onboarding-content-inner {
+  width: 100%;
+
+  max-width: 430px;
+
+  text-align: center;
+}
+
+
+/* ======================================================
+   LOGO
+====================================================== */
+
+.onboarding-logo {
+  width: 180px;
+
+  max-width: 75%;
+
+  height: auto;
+
+  margin-bottom: 24px;
+}
+
+
+/* ======================================================
+   TEXTO
+====================================================== */
+
+.onboarding-eyebrow {
+  margin-bottom: 8px;
+
+  color: #d10000;
+
+  font-size: .8rem;
+  font-weight: 800;
+
+  letter-spacing: 1.7px;
+
+  text-transform: uppercase;
+}
+
+
+.onboarding-title {
+  margin-bottom: 14px;
+
+  color: #222;
+
+  font-size:
+    clamp(
+      2rem,
+      4vw,
+      2.8rem
+    );
+
+  font-weight: 800;
+
+  line-height: 1.05;
+}
+
+
+.onboarding-text {
+  margin-bottom: 30px;
+
+  color: #555;
+
+  font-size: 1rem;
+
+  line-height: 1.65;
+}
+
+
+/* ======================================================
+   BOTONES
+====================================================== */
+
+.onboarding-actions {
+  display: grid;
+
+  gap: 14px;
+}
+
+
+.onboarding-actions .btn {
+  width: 100%;
+
+  padding:
+    13px
+    22px;
+
+  font-weight: 700;
+}
+
+
+.onboarding-primary-btn {
+  box-shadow:
+    0 8px 20px
+    rgba(209,0,0,.20);
+}
+
+
+.guest-btn {
+  border-width: 2px;
+}
+
+
+.onboarding-help {
+  margin:
+    22px 0 0;
+
+  color: #888;
+
+  font-size: .82rem;
+
+  line-height: 1.45;
+}
+
+
+/* ======================================================
+   TABLET
+====================================================== */
+
+@media (max-width: 991px) {
+
+  .onboarding-card {
+    grid-template-columns: 1fr;
+
+    min-height: auto;
+
+    max-width: 720px;
+  }
+
+
+  .onboarding-visual {
+    min-height: 330px;
+  }
+
+
+  .onboarding-content {
+    padding:
+      38px
+      28px;
+  }
+
+}
+
+
+/* ======================================================
+   MÓVIL
+====================================================== */
+
+@media (max-width: 576px) {
+
+  .onboarding-shell {
+    padding:
+      16px
+      12px;
+  }
+
+
+  .onboarding-card {
+    border-radius: 24px;
+  }
+
+
+  .onboarding-visual {
+    min-height: 240px;
+
+    background-position:
+      center;
+  }
+
+
+  .onboarding-content {
+    padding:
+      30px
+      20px;
+  }
+
+
+  .onboarding-logo {
+    width: 145px;
+
+    margin-bottom: 18px;
+  }
+
+
+  .onboarding-text {
+    margin-bottom: 24px;
+
+    font-size: .94rem;
+  }
+
+}

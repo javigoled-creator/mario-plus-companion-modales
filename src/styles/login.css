@@ -1,0 +1,399 @@
+/* ======================================================
+   LOGIN — MARIO PLUS COMPANION
+====================================================== */
+
+.login-page {
+  min-height: calc(100vh - 96px);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 50px 24px;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(180,0,0,.92),
+      rgba(55,0,120,.82)
+    ),
+    url('/assets/auth-background.jpg');
+
+  background-size: cover;
+  background-position: center;
+}
+
+
+/* ======================================================
+   CONTENEDOR PRINCIPAL
+====================================================== */
+
+.login-shell {
+  width: min(1050px, 100%);
+
+  display: grid;
+
+  grid-template-columns:
+    1fr 1fr;
+
+  overflow: hidden;
+
+  border-radius: 30px;
+
+  background: white;
+
+  box-shadow:
+    0 24px 60px
+    rgba(0,0,0,.25);
+}
+
+
+/* ======================================================
+   PANEL VISUAL
+====================================================== */
+
+.login-visual {
+  position: relative;
+
+  min-height: 620px;
+
+  background:
+    url('/assets/auth-side.jpg');
+
+  background-size: cover;
+  background-position: center;
+}
+
+
+.login-visual::before {
+  content: '';
+
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      to top,
+      rgba(80,0,0,.86),
+      rgba(100,0,0,.15)
+    );
+}
+
+
+.login-visual-overlay {
+  position: absolute;
+
+  z-index: 2;
+
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  padding: 42px;
+
+  color: white;
+}
+
+
+.login-eyebrow {
+  margin-bottom: 8px;
+
+  text-transform: uppercase;
+
+  font-size: .82rem;
+  font-weight: 800;
+
+  letter-spacing: 1.6px;
+}
+
+
+.login-visual h1 {
+  margin-bottom: 14px;
+
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+
+.login-visual p {
+  max-width: 430px;
+
+  margin: 0;
+
+  line-height: 1.6;
+}
+
+
+/* ======================================================
+   FORMULARIO
+====================================================== */
+
+.login-form-panel {
+  display: flex;
+
+  align-items: center;
+
+  padding: 50px;
+}
+
+
+.login-form-content {
+  width: 100%;
+
+  max-width: 400px;
+
+  margin: auto;
+}
+
+
+.login-logo {
+  display: block;
+
+  width: 190px;
+  height: auto;
+
+  margin-bottom: 30px;
+}
+
+
+.login-form-content h2 {
+  margin-bottom: 8px;
+
+  color: #222;
+
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+
+.login-intro {
+  margin-bottom: 22px;
+
+  color: #666;
+}
+
+
+/* ======================================================
+   CREDENCIALES DEMO
+====================================================== */
+
+.demo-access {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 4px;
+
+  margin-bottom: 24px;
+
+  padding: 15px 17px;
+
+  border-radius: 16px;
+
+  background: #fff4f4;
+
+  color: #555;
+
+  font-size: .88rem;
+}
+
+
+.demo-access strong {
+  color: #c80000;
+}
+
+
+/* ======================================================
+   CAMPOS
+====================================================== */
+
+.login-form {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 18px;
+}
+
+
+.form-group {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 7px;
+}
+
+
+.form-group label {
+  color: #333;
+
+  font-size: .9rem;
+  font-weight: 700;
+}
+
+
+.form-group input {
+  width: 100%;
+
+  padding: 13px 16px;
+
+  border:
+    1px solid #ddd;
+
+  border-radius: 14px;
+
+  outline: none;
+
+  background: #fafafa;
+
+  transition:
+    border .2s ease,
+    box-shadow .2s ease;
+}
+
+
+.form-group input:focus {
+  border-color: #d10000;
+
+  background: white;
+
+  box-shadow:
+    0 0 0 3px
+    rgba(209,0,0,.09);
+}
+
+
+/* ======================================================
+   ERROR
+====================================================== */
+
+.login-error {
+  padding: 12px 14px;
+
+  border-radius: 12px;
+
+  background: #ffe6e6;
+
+  color: #a00000;
+
+  font-size: .9rem;
+}
+
+
+/* ======================================================
+   BOTONES
+====================================================== */
+
+.login-submit {
+  border: 0;
+
+  padding: 13px 20px;
+
+  border-radius: 999px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #e00000,
+      #b80000
+    );
+
+  color: white;
+
+  font-weight: 800;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 7px 18px
+    rgba(200,0,0,.22);
+
+  transition:
+    transform .2s ease;
+}
+
+
+.login-submit:hover {
+  transform:
+    translateY(-2px);
+}
+
+
+.login-back {
+  width: 100%;
+
+  margin-top: 16px;
+
+  border: 0;
+
+  background: transparent;
+
+  color: #777;
+
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+
+/* ======================================================
+   RESPONSIVE
+====================================================== */
+
+@media (max-width: 850px) {
+
+  .login-shell {
+    grid-template-columns: 1fr;
+  }
+
+
+  .login-visual {
+    min-height: 260px;
+  }
+
+
+  .login-visual-overlay {
+    padding: 28px;
+  }
+
+
+  .login-visual h1 {
+    font-size: 2rem;
+  }
+
+
+  .login-form-panel {
+    padding: 38px 28px;
+  }
+
+}
+
+
+@media (max-width: 500px) {
+
+  .login-page {
+    padding: 24px 14px;
+  }
+
+
+  .login-shell {
+    border-radius: 22px;
+  }
+
+
+  .login-visual {
+    display: none;
+  }
+
+
+  .login-form-panel {
+    padding: 32px 22px;
+  }
+
+
+  .login-logo {
+    width: 160px;
+  }
+
+}

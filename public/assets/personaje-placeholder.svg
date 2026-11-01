@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
+  <rect width="600" height="600" fill="#f4f4f4"/>
+
+  <circle cx="300" cy="230" r="105" fill="#dddddd"/>
+
+  <path
+    d="M120 540c20-130 95-200 180-200s160 70 180 200"
+    fill="#dddddd"
+  />
+
+  <circle cx="300" cy="230" r="70" fill="#eeeeee"/>
+
+  <text
+    x="300"
+    y="255"
+    text-anchor="middle"
+    font-family="Arial, sans-serif"
+    font-size="72"
+    font-weight="700"
+    fill="#aaaaaa"
+  >?</text>
+
+  <text
+    x="300"
+    y="575"
+    text-anchor="middle"
+    font-family="Arial, sans-serif"
+    font-size="22"
+    font-weight="600"
+    fill="#888888"
+  >Imagen pendiente</text>
+</svg>

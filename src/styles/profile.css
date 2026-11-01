@@ -1,0 +1,435 @@
+/* ======================================================
+   PROFILE — MARIO PLUS COMPANION
+====================================================== */
+
+.profile-page {
+  min-height: 100vh;
+  background: #f4f4f4;
+}
+
+
+/* ======================================================
+   HERO DEL PERFIL
+====================================================== */
+
+.profile-hero {
+  position: relative;
+
+  border-radius: 30px;
+  overflow: hidden;
+
+  background-image:
+    url('/assets/profile-banner.jpg');
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  min-height: 320px;
+
+  box-shadow:
+    0 14px 32px rgba(0,0,0,0.14);
+}
+
+
+.profile-hero-overlay {
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      to right,
+      rgba(190, 0, 0, 0.88),
+      rgba(55, 0, 130, 0.58)
+    );
+}
+
+
+.profile-hero-content {
+  position: relative;
+  z-index: 2;
+
+  padding: 32px 28px;
+
+  color: white;
+}
+
+
+/* ======================================================
+   AVATAR
+====================================================== */
+
+.avatar-wrapper {
+  width: 120px;
+  height: 120px;
+
+  flex: 0 0 120px;
+
+  border-radius: 50%;
+  overflow: hidden;
+
+  border:
+    4px solid rgba(255,255,255,0.9);
+
+  box-shadow:
+    0 8px 20px rgba(0,0,0,0.18);
+
+  background: white;
+}
+
+
+.avatar-image {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  display: block;
+}
+
+
+.profile-tag {
+  font-size: 0.92rem;
+
+  text-transform: uppercase;
+
+  letter-spacing: 1px;
+
+  opacity: 0.9;
+}
+
+
+.profile-title {
+  font-size: 2.8rem;
+  font-weight: 800;
+}
+
+
+.profile-subtext {
+  font-size: 1rem;
+
+  line-height: 1.5;
+
+  max-width: 620px;
+}
+
+
+/* ======================================================
+   NIVEL
+====================================================== */
+
+.profile-level-card {
+  background:
+    rgba(255,255,255,0.14);
+
+  border:
+    1px solid rgba(255,255,255,0.2);
+
+  border-radius: 24px;
+
+  padding: 22px;
+
+  backdrop-filter: blur(3px);
+}
+
+
+.profile-level-card h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+
+.level-name {
+  font-size: 1.8rem;
+  font-weight: 800;
+}
+
+
+.modern-progress {
+  height: 18px;
+
+  border-radius: 999px;
+
+  background:
+    rgba(255,255,255,0.25);
+
+  overflow: hidden;
+}
+
+
+.modern-progress .progress-bar {
+  background:
+    linear-gradient(
+      90deg,
+      #ffcf33,
+      #ff9a00
+    );
+
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+
+.level-help {
+  font-size: 0.95rem;
+
+  opacity: 0.92;
+}
+
+
+/* ======================================================
+   MÉTRICAS
+====================================================== */
+
+.metric-card {
+  background: white;
+
+  border-radius: 22px;
+
+  padding: 24px;
+
+  text-align: center;
+
+  box-shadow:
+    0 10px 22px rgba(0,0,0,0.08);
+
+  height: 100%;
+}
+
+
+.metric-card h3 {
+  font-size: 2rem;
+
+  font-weight: 800;
+
+  color: #d10000;
+
+  margin-bottom: 8px;
+}
+
+
+.metric-card p {
+  margin: 0;
+
+  color: #444;
+
+  font-weight: 500;
+}
+
+
+/* ======================================================
+   TARJETAS DE CONTENIDO
+====================================================== */
+
+.content-card {
+  background: white;
+
+  border-radius: 26px;
+
+  padding: 28px;
+
+  box-shadow:
+    0 10px 22px rgba(0,0,0,0.08);
+}
+
+
+.section-heading {
+  font-size: 1.6rem;
+
+  font-weight: 800;
+
+  margin-bottom: 20px;
+
+  color: #222;
+}
+
+
+.subsection-heading {
+  font-size: 1.2rem;
+
+  font-weight: 800;
+
+  color: #222;
+}
+
+
+.summary-text {
+  color: #555;
+
+  line-height: 1.6;
+}
+
+
+/* ======================================================
+   INFORMACIÓN DEL USUARIO
+====================================================== */
+
+.info-list {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 14px;
+}
+
+
+.info-item {
+  background: #f8f8f8;
+
+  border-radius: 18px;
+
+  padding: 14px 16px;
+
+  display: flex;
+
+  flex-direction: column;
+}
+
+
+.info-label {
+  font-size: 0.88rem;
+
+  color: #777;
+
+  margin-bottom: 4px;
+}
+
+
+.info-value {
+  font-size: 1rem;
+
+  font-weight: 700;
+
+  color: #222;
+}
+
+
+/* ======================================================
+   INSIGNIAS
+====================================================== */
+
+.badge-card {
+  background: #f9f9f9;
+
+  border-radius: 22px;
+
+  padding: 20px 16px;
+
+  height: 100%;
+}
+
+
+.badge-card-button {
+  border: none;
+
+  width: 100%;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+
+.badge-card-button:hover {
+  transform: translateY(-4px);
+
+  box-shadow:
+    0 10px 20px rgba(0,0,0,0.10);
+}
+
+
+.badge-card-button:focus {
+  outline: 2px solid #d10000;
+
+  outline-offset: 2px;
+}
+
+
+.badge-image {
+  width: 72px;
+  height: 72px;
+
+  object-fit: contain;
+
+  margin-bottom: 12px;
+}
+
+
+.badge-card h4 {
+  font-size: 1.15rem;
+
+  font-weight: 800;
+
+  margin-bottom: 6px;
+
+  color: #222;
+}
+
+
+.badge-card p {
+  margin: 0;
+
+  color: #555;
+
+  font-size: 0.95rem;
+}
+
+
+.active-badge {
+  border: 2px solid #d10000;
+
+  box-shadow:
+    0 8px 18px rgba(209,0,0,0.12);
+}
+
+
+/* ======================================================
+   RESPONSIVE
+====================================================== */
+
+@media (max-width: 991px) {
+
+  .profile-title {
+    font-size: 2.1rem;
+  }
+
+
+  .profile-hero-content {
+    padding: 26px 22px;
+  }
+
+
+  .profile-level-card {
+    margin-top: 12px;
+  }
+
+}
+
+
+@media (max-width: 576px) {
+
+  .profile-hero {
+    border-radius: 24px;
+  }
+
+
+  .avatar-wrapper {
+    width: 96px;
+    height: 96px;
+
+    flex-basis: 96px;
+  }
+
+
+  .profile-title {
+    font-size: 1.8rem;
+  }
+
+
+  .content-card {
+    padding: 22px 18px;
+  }
+
+}
